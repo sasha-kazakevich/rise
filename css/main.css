@@ -2,7 +2,9 @@
 
 body {
 	width: 100%;
-	background: url(../img/Grey.jpg);
+	background: url(../img/fon.png);
+	background-size: cover;
+	background-color: #00312d;
 	font-family: "HeliosCond";
 	color: #fff;
 }
@@ -93,11 +95,10 @@ body {
 }
 .menu .main-menu li:hover {
 	cursor: pointer;
-	color: #707070;
+	text-decoration: underline;
 }
 .active {
 	text-decoration: underline;
-	background: 
 }
 
 .main {
@@ -105,46 +106,23 @@ body {
 	margin: 0% auto;
 	overflow: hidden;
 }
-.main .portfolio .works{
-	width: 98%;
-	margin: 0 auto;
-	display: flex;
+.main .project .main-button {
+	width: 22%;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	float: right;
+	margin: 10% 5% 18%;
 }
-.main .portfolio .works .port{
-	width: 25%;
-	position: relative;
-	background: #fff;
-	}
-.main .portfolio .works .port img{
-	width: 100%;
-	display: block;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+.main .project .main-button p{
+	font-family: "Tahoma";
+	font-size: 2vw;
+	padding: 5% 7%;
 }
-.main .portfolio .works .port .text {
-	text-align: center;
-	position: absolute;
-	width: 50%;
-	display: none;
-	top: 38%;
-	left: 23%;
-}
-.main .portfolio .works .port .text p {
-	font-size: 1.1vw;
-}
-.main .portfolio .works .port .text .firm-name {
-	font-size: 3.4vw;
-}
-.main .portfolio .works .port:hover img {
-	opacity: 0.4;
+.main .project .main-button:hover {
 	cursor: pointer;
+	border: 1px solid #000;
 }
-.main .portfolio .works .port:hover .text {
-	color: #000;
-	display: block;
-}
+
 .main .about-us {
 	width: 100%;
 	background: #fff;
@@ -343,6 +321,51 @@ body {
 .main .contacts .form textarea {
 	font-size: 1.4vw;
 }
+
+.main .portfolio{
+	display: none;
+}
+.main .portfolio .works{
+	width: 98%;
+	margin: 0 auto;
+	display: flex;
+}
+.main .portfolio .works .port{
+	width: 25%;
+	position: relative;
+	background: #fff;
+	}
+.main .portfolio .works .port img{
+	width: 100%;
+	display: block;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.main .portfolio .works .port .text {
+	text-align: center;
+	position: absolute;
+	width: 50%;
+	display: none;
+	top: 38%;
+	left: 23%;
+}
+.main .portfolio .works .port .text p {
+	font-size: 1.1vw;
+}
+.main .portfolio .works .port .text .firm-name {
+	font-size: 3.4vw;
+}
+.main .portfolio .works .port:hover img {
+	opacity: 0.4;
+	cursor: pointer;
+}
+.main .portfolio .works .port:hover .text {
+	color: #000;
+	display: block;
+}
+
 .main .slider {
 	display: none;
 }
@@ -462,11 +485,18 @@ body {
 	cursor: pointer;
 }
 
+.project-footer{
+	width: 20%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 .footer {
 	width: 60%;
 	margin: 1% auto;
 	display: flex;
 	justify-content: space-between;
+	display: none;
 
 }
 .footer p {

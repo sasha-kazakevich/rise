@@ -13,13 +13,27 @@ $(function () {
 
 (function(){
 	var all = document.getElementsByClassName("all"),
-		li = document.getElementsByClassName("li");
+		li = document.getElementsByClassName("li"),
+		body = document.body,
+		footProj = document.getElementById("foot-proj"),
+		footer = document.getElementById("footer");
 
 	function clickMenu(e){
 		if (e.target.getAttribute("data") !== null) {
 		var data = e.target.getAttribute("data");
-		if (data === "4"){
+		if (data === "5"){
 			$(e.target.getAttribute("data-slider")).click();
+		}
+		if (data === "0"){
+			body.style.background = "url('img/fon.png')";
+			body.style.backgroundSize = "cover";
+			body.style.backgroundColor = "#00312d";
+			footProj.style.display = "block";
+			footer.style.display = "none";
+		}else {
+			document.body.style.background = "url('img/Grey.jpg')";
+			footProj.style.display = "none";
+			footer.style.display = "flex";
 		}
 		for (var i = 0;i < all.length;i++){
 			all[i].style.display = "none";
