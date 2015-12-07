@@ -9,6 +9,12 @@ $(function () {
 		namespace: "centered-btns"
 	});
 
+	$("body").keydown(function(ev){
+			switch(ev.which){
+				case 39 : $(".centered-btns_nav.next").click();break;
+				case 37 : $(".centered-btns_nav.prev").click();break;
+			}
+	});
 });
 
 (function(){

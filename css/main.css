@@ -107,16 +107,16 @@ body {
 	overflow: hidden;
 }
 .main .project .main-button {
-	width: 22%;
+	width: 23%;
 	border: 1px solid #fff;
 	border-radius: 3px;
 	float: right;
-	margin: 10% 5% 18%;
+	margin: 10% 8% 17%;
 }
 .main .project .main-button p{
 	font-family: "Tahoma";
 	font-size: 2vw;
-	padding: 5% 7%;
+	padding: 5% 8%;
 }
 .main .project .main-button:hover {
 	cursor: pointer;
